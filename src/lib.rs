@@ -41,5 +41,10 @@ pub fn __execute(input: *const *const u8) -> *const u8 {
             })
             .collect()
     };
-    __return(&logic::execute(outputs))
+    __return(
+        &bincode::config()
+            .big_endian()
+            .serialize(&logic::execute(outputs))
+            .unwrap(),
+    )
 }

@@ -8,5 +8,6 @@ edition = "2018"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
+bincode = "1.2.0"
 wasm-bindgen = "*"
 owasm = "*"
