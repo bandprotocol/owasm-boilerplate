@@ -47,6 +47,6 @@ mod tests {
   fn test_end_to_end_from_local_env() {
     // Run with local environment
     let data = Data::build_from_local_env().unwrap();
-    println!("{}", execute(vec![data]));
+    println!("Current BTC price (times 100) is {}", execute(vec![data]));
   }
 }
