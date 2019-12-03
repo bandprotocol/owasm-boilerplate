@@ -19,9 +19,3 @@ $ cargo test -- --nocapture
 $ wasm-pack build
 $ ls pkg/awesome_oracle_bg.wasm
 ```
-
-## End-to-End Test
-
-```
-$ cargo run --package bin -- pkg/awesome_oracle_bg.wasm
-```
